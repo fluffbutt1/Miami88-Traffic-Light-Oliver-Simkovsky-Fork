@@ -8,6 +8,7 @@ const Home = () => {
 
   const [isActive, setIsActive] = useState(false); 
   // for future reference don't use a bool. check for the color. not  if it's true.
+  // maybe try useEffect
   
   const Colors = () =>{
 	setIsActive(true);
