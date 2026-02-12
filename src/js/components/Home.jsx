@@ -23,7 +23,6 @@ const Home = () => {
         <div className={isActive ? "circle1" : "circle4"} onClick={(Colors)}></div>
         <div className={isActive ? "circle2" : "circle4"} onClick={(Colors)}></div>
         <div className={isActive ? "circle3" : "circle4"} onClick={(Colors)}></div>
-
 		<div className={`circle4 ${isActive ? "active" : ""}`} onClick={(Colors)}></div>
       </div>
     </div>
