@@ -12,15 +12,16 @@ const Home = () => {
 	setIsActive(true);
 	if(isActive === true){
 		console.log("triggered");
+		setIsActive(prev => !prev);
 	}
   };
 
   return (
     <div className="d-flex justify-content-center">
       <div className="bg-black w-25 text-center d-flex flex-column justify-content-center align-items-center">
-        <div className="circle1" onClick={(Colors)}></div>
-        <div className="circle2"></div>
-        <div className="circle3"></div>
+        <div className={isActive ? "circle1" : "circle4"} onClick={(Colors)}></div>
+        <div className={isActive ? "circle2" : "circle4"} onClick={(Colors)}></div>
+        <div className={isActive ? "circle3" : "circle4"} onClick={(Colors)}></div>
 
 		<div className={`circle4 ${isActive ? "active" : ""}`} onClick={(Colors)}></div>
       </div>
