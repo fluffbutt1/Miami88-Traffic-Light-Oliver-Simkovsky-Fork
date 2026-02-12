@@ -7,10 +7,10 @@ import rigoImage from "../../img/rigo-baby.jpg";
 const Home = () => {
 	return (
 		<div className="d-flex justify-content-center">
-			<div className="bg-black w-75 text-center">
-				<div className="text-danger">hi</div>
-				<div className="text-warning">hi</div>
-				<div className="text-success">hi</div>
+			<div className="bg-black w-25 text-center d-flex flex-column justify-content-center align-items-center">
+				<div className="text-danger circle1"></div>
+				<div className="text-warning circle2"></div>
+				<div className="text-success circle3"></div>
 			</div>
 		</div>
 	);
