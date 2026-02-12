@@ -6,7 +6,8 @@ import rigoImage from "../../img/rigo-baby.jpg";
 //create your first component
 const Home = () => {
 
-  const [isActive, setIsActive] = useState(false);
+  const [isActive, setIsActive] = useState(false); 
+  // for future reference don't use a bool. check for the color. not  if it's true.
   
   const Colors = () =>{
 	setIsActive(true);
