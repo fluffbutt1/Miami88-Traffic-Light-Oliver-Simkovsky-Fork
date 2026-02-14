@@ -12,17 +12,17 @@ const Home = () => {
 
   const [activeColor, setActiveColor] = useState(null);
 
-  const Colors = (color) =>{
+  const changeColor = (color) =>{
     setActiveColor(color);
-    console.log("cicked");
+    console.log("clicked");
   };
 
   return (
     <div className="d-flex justify-content-center">
       <div className="bg-black w-25 text-center d-flex flex-column justify-content-center align-items-center">
-        <div className={`circle1 ${activeColor === "Green" ? "glow1" : ""}`} onClick={() => Colors("Green")}></div>
-        <div className={`circle2 ${activeColor === "Yellow" ? "glow2" : ""}`} onClick={() => Colors("Yellow")}></div>
-        <div className={`circle3 ${activeColor === "Red" ? "glow3" : ""}`} onClick={() => Colors("Red")}></div>
+        <div className={`circle1 ${activeColor === "Green" ? "glow1" : ""}`} onClick={() => changeColor("Green")}></div>
+        <div className={`circle2 ${activeColor === "Yellow" ? "glow2" : ""}`} onClick={() => changeColor("Yellow")}></div>
+        <div className={`circle3 ${activeColor === "Red" ? "glow3" : ""}`} onClick={() => changeColor("Red")}></div>
       </div>
     </div>
   );
